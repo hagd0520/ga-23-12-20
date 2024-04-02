@@ -11,9 +11,6 @@ on:
 jobs:
   makeTagAndRelease:
     runs-on: ubuntu-latest
-    permissions:
-        contents: read
-        packages: write
     outputs:
       tag_name: ${{ steps.create_tag.outputs.new_tag }}
     steps:
